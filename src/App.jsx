@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import ProfileContainer from "./components/ProfileContainer";
@@ -25,11 +26,15 @@ function App() {
 				</motion.div>
 				<AnimatePresence
 					initial={false}
-					mode={"wait"}>
-					<PageContainer
-						key={window.location.pathname}
-						activeLink={activeLink}
-					/>
+					mode='wait'>
+					<Router
+						location={location}
+						key={location.pathname}>
+						<PageContainer
+							key={window.location.pathname}
+							activeLink={activeLink}
+						/>
+					</Router>
 				</AnimatePresence>
 			</div>
 		</div>

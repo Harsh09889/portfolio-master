@@ -22,7 +22,7 @@ function MyLove() {
 			y: 0,
 		},
 		exit: {
-			opacity: 1,
+			y: 0,
 		},
 	};
 
@@ -31,7 +31,6 @@ function MyLove() {
 			variants={slideUp}
 			initial='hidden'
 			animate='visible'
-			// transition={{ duration: 1 }}
 			exit='exit'
 			className='grid place-items-center min-h-screen w-full md:w-[60%] pt-12 md:pt-28 md:p-6 bg-[#00C9FF] z-[49]'>
 			<div className='cardsContainer  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-12 '>

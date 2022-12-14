@@ -9,7 +9,7 @@ function ContactMe() {
 			y: 0,
 		},
 		exit: {
-			opacity: 1,
+			y: 0,
 		},
 	};
 	return (
