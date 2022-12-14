@@ -29,16 +29,18 @@ function App() {
 				activeLink={activeLink}
 				setActiveLink={setActiveLink}
 			/>
-			<div className='flex flex-col  md:flex-row'>
+			<div className='flex flex-col md:flex-row'>
 				<motion.div
 					whileTap={{ scale: 0.2 }}
 					transition={{
 						duration: 1,
 					}}
-					className='w-full mb-40 md:mb-0 md:w-[40%] h-fit relative md:sticky top-28 '>
+					className=' w-full mb-40 md:mb-0 md:w-[40%] h-fit sticky top-28 '>
 					<ProfileContainer />
 				</motion.div>
-				<AnimatePresence>
+				<AnimatePresence
+					initial={false}
+					mode={"wait"}>
 					<PageContainer activeLink={activeLink} />
 				</AnimatePresence>
 			</div>

@@ -9,7 +9,7 @@ export default function Navbar({ activeLink, setActiveLink }) {
 
 	return (
 		<>
-			<nav className='h-20 w-[98%] flex bg-[var(--nav-bg)] p-4 justify-between items-center rounded-lg mx-2 fixed top-4 left-0 z-50'>
+			<nav className='h-20 w-[98%] flex bg-[var(--nav-bg)] p-4 justify-between items-center rounded-lg fixed top-4 left-[1%] z-50'>
 				<div className='h-full w-fit grid place-items-center'>
 					<motion.h1
 						drag='x'
@@ -37,6 +37,7 @@ export default function Navbar({ activeLink, setActiveLink }) {
 					<Sidebar
 						activeLink={activeLink}
 						setActiveLink={setActiveLink}
+						setSidebar={setSidebar}
 					/>
 				)}
 			</AnimatePresence>

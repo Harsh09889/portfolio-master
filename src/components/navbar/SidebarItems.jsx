@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaHome, FaUser, FaHeart, FaCode, FaAt } from "react-icons/fa";
 
-function SidebarItems({ activeLink, setActiveLink }) {
+function SidebarItems({ activeLink, setActiveLink, setSidebar }) {
 	const moveActiveLink = (key) => {
 		if (key == 1) return "0";
 		if (key == 2) return "100%";
@@ -11,19 +11,17 @@ function SidebarItems({ activeLink, setActiveLink }) {
 		if (key == 5) return "400%";
 	};
 
+	console.log(activeLink);
+
 	const movement = {
 		y: moveActiveLink(activeLink),
-		transition: {
-			type: "spring",
-			damping: 30,
-			stiffness: 700,
-		},
 	};
 
 	const handleLinkClick = (e) => {
-		const pathNo = e.target.value;
+		// console.log(e);
+		// const pathNo = e.target.value;
 		// setActiveLink(pathNo);
-		// navigation(pathNo);
+		// setLink(pathNo);
 	};
 
 	return (
@@ -43,6 +41,12 @@ function SidebarItems({ activeLink, setActiveLink }) {
 				/>{" "}
 				<motion.label
 					htmlFor='home'
+					onClick={() => {
+						setActiveLink(1);
+						setTimeout(() => {
+							setSidebar(false);
+						}, 500);
+					}}
 					whileHover={{ scale: 1.1 }}
 					className={`cursor-pointer font-bold h-full w-full grid place-items-center ${
 						activeLink == 1 ? "text-green-500" : "text-[var(--nav-text)]"
@@ -63,6 +67,12 @@ function SidebarItems({ activeLink, setActiveLink }) {
 				/>{" "}
 				<motion.label
 					htmlFor='about'
+					onClick={() => {
+						setActiveLink(2);
+						setTimeout(() => {
+							setSidebar(false);
+						}, 500);
+					}}
 					whileHover={{ scale: 1.1 }}
 					className={`cursor-pointer font-bold h-full w-full grid place-items-center  ${
 						activeLink == 2 ? "text-green-500" : "text-[var(--nav-text)]"
@@ -82,6 +92,12 @@ function SidebarItems({ activeLink, setActiveLink }) {
 					id='work'
 				/>{" "}
 				<motion.label
+					onClick={() => {
+						setActiveLink(3);
+						setTimeout(() => {
+							setSidebar(false);
+						}, 500);
+					}}
 					htmlFor='work'
 					whileHover={{ scale: 1.1 }}
 					className={`cursor-pointer font-bold h-full w-full grid place-items-center  ${
@@ -103,6 +119,12 @@ function SidebarItems({ activeLink, setActiveLink }) {
 				/>{" "}
 				<motion.label
 					htmlFor='projects'
+					onClick={() => {
+						setActiveLink(4);
+						setTimeout(() => {
+							setSidebar(false);
+						}, 500);
+					}}
 					whileHover={{ scale: 1.1 }}
 					className={`cursor-pointer font-bold h-full w-full grid place-items-center  ${
 						activeLink == 4 ? "text-green-500" : "text-[var(--nav-text)]"
@@ -123,6 +145,12 @@ function SidebarItems({ activeLink, setActiveLink }) {
 				/>{" "}
 				<motion.label
 					htmlFor='contact'
+					onClick={() => {
+						setActiveLink(5);
+						setTimeout(() => {
+							setSidebar(false);
+						}, 500);
+					}}
 					whileHover={{ scale: 1.1 }}
 					className={`cursor-pointer font-bold h-full w-full grid place-items-center ${
 						activeLink == 5 ? "text-green-500" : "text-[var(--nav-text)]"

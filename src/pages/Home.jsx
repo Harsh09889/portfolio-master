@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Typed from "typed.js";
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
 					"Hola",
 					"Ciao",
 					"Olá ",
-				], // Strings to display
+				],
 				startDelay: 200,
 				typeSpeed: 120,
 				backSpeed: 50,
@@ -37,7 +38,7 @@ function Home() {
 	}, []);
 
 	return (
-		<div className='grid place-items-center h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10'>
+		<div className='grid place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10'>
 			<div className='justify-center flex flex-col gap-12 h-fit'>
 				<h1
 					className='
@@ -50,29 +51,39 @@ function Home() {
 					Introduction
 				</h1>
 
-				<span
-					ref={el}
-					id='salutation'
-					className='text
-					text-4xl 
-					md:text-6xl 
-					min-h-[65px]
-					md:min-h-[90px]
-					'></span>
+				<div className='flex justify-start gap-6 items-start w-full'>
+					<span
+						ref={el}
+						id='salutation'
+						className='text
+						text-4xl 
+						ease-out
+						md:text-6xl 
+						min-h-[65px]
+						md:min-h-[90px]
+						'></span>
+
+					<motion.img
+						className='h-16 w-16 md:h-20 md:w-20 bg-white p-2 -m-2 rounded-full'
+						src='https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png'
+					/>
+				</div>
 
 				<h1
 					className={`
 						text-lg
-						md:text-3xl
+						md:text-2xl
 						font-normal font-sans md:min-h-[150px]`}>
-					I am a Developer and Teacher by choice. Whether it be Designing a
-					Website or Teaching someone something I do it in the best way
-					possible.
+					Analytical and detail-oriented aspiring Full Stack Developer. Capable
+					of writing production-ready code using ReactJS, Redux, and CSS on the
+					frontend, NodeJS and Express on the backend to build single page
+					applications. Passionate about coding and strongly interested in
+					working in a product-based company.
 				</h1>
 
 				<span
 					style={{ fontFamily: "Montez, cursive" }}
-					className='font text-3xl md:text-6xl underline underline-offset-8 text-black text-right -rotate-12 origin-center'>
+					className='font text-4xl md:text-6xl underline underline-offset-8 text-black text-right -rotate-12 origin-center mt-8'>
 					Harsh kumar
 				</span>
 			</div>
