@@ -6,6 +6,18 @@ import Typed from "typed.js";
 function Home() {
 	const el = useRef("span");
 
+	const slideUp = {
+		hidden: {
+			y: "100%",
+		},
+		visible: {
+			y: 0,
+		},
+		exit: {
+			opacity: 1,
+		},
+	};
+
 	useEffect(() => {
 		const typed1 = new Typed(
 			el.current,
@@ -38,7 +50,12 @@ function Home() {
 	}, []);
 
 	return (
-		<div className='grid place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10 z-[49]'>
+		<motion.div
+			variants={slideUp}
+			initial='hidden'
+			animate='visible'
+			exit='exit'
+			className='grid place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10 z-[49]'>
 			<div className='justify-center flex flex-col gap-12 h-fit'>
 				<h1
 					className='
@@ -87,7 +104,7 @@ function Home() {
 					Harsh kumar
 				</span>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

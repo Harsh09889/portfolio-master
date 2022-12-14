@@ -8,21 +8,6 @@ import PageContainer from "./components/PageContainer";
 function App() {
 	const [activeLink, setActiveLink] = useState(1);
 
-	const dropIn = {
-		hidden: { y: -100, opacity: 0 },
-		visible: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				duration: 0.1,
-				type: "spring",
-				damping: 15,
-				stiffness: 500,
-			},
-		},
-		exit: { y: 100, opacity: 0 },
-	};
-
 	return (
 		<div className='App '>
 			<Navbar
@@ -41,7 +26,10 @@ function App() {
 				<AnimatePresence
 					initial={false}
 					mode={"wait"}>
-					<PageContainer activeLink={activeLink} />
+					<PageContainer
+						key={window.location.pathname}
+						activeLink={activeLink}
+					/>
 				</AnimatePresence>
 			</div>
 		</div>

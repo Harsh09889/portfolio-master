@@ -1,20 +1,22 @@
 .cardsContainer {
-	perspective: 900px;
+	perspective: 2000px;
 	transform-style: preserve-3d;
 }
 
-.cardsContainer > div {
-	transform: rotateX(50deg);
-	transition: all 0.1s ease-in-out;
-	border-radius: 1rem;
-	box-shadow: 2px 40px 8px rgba(0, 0, 0, 0.4);
+@media screen and (min-width: 780px) {
+	.cardsContainer > div {
+		transform: rotateX(50deg);
+		transition: all 0.1s ease-in-out;
+		border-radius: 1rem;
+		box-shadow: 2px 40px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	.cardsContainer > div:hover {
+		transform: rotateX(0);
+	}
 }
 
-.cardsContainer > div:hover {
-	transform: rotateX(0);
-}
-
-#cardOverlay {
+.cardOverlay {
 	position: absolute; /* Sit on top of the page content */
 	display: none;
 	border-radius: 1rem;
@@ -24,11 +26,18 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	place-items: center;
+	text-align: center;
 	background-color: rgba(0, 0, 0, 0.25); /* Black background with opacity */
 	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 	cursor: pointer; /* Add a pointer on hover */
 }
 
-.cardsContainer > div:hover > #cardOverlay {
-	display: block;
+.cardsContainer > div:hover > .cardOverlay {
+	display: grid;
+}
+
+.cardsContainer > div:hover > .cardOverlay > p {
+	background-color: rgba(0, 0, 0, 0.45);
+	color: white;
 }
