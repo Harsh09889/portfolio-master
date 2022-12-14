@@ -1,15 +1,15 @@
-import html from "../assets/images/skills/htmlLogo.png";
-import css from "../assets/images/skills/cssLogo.png";
-import js from "../assets/images/skills/jsLogo.png";
+import html from "../assets/images/skills/htmlLogo.webp";
+import css from "../assets/images/skills/cssLogo.webp";
+import js from "../assets/images/skills/jsLogo.webp";
 import nodeJS from "../assets/images/skills/nodeJSLogo.png";
-import express from "../assets/images/skills/expressLogo.png";
+import express from "../assets/images/skills/expressLogo.webp";
 import react from "../assets/images/skills/reactLogo.png";
 import redux from "../assets/images/skills/reduxLogo.png";
-import mongo from "../assets/images/skills/mongoLogo.png";
-import java from "../assets/images/skills/javaLogo.png";
-import python from "../assets/images/skills/pythonLogo.png";
-import tailwind from "../assets/images/skills/tailwindLogo.png";
-import linux from "../assets/images/skills/linuxLogo.png";
+import mongo from "../assets/images/skills/mongoLogo.webp";
+import java from "../assets/images/skills/javaLogo.webp";
+import python from "../assets/images/skills/pythonLogo.webp";
+import tailwind from "../assets/images/skills/tailwindLogo.webp";
+import linux from "../assets/images/skills/linuxLogo.webp";
 import "../styles/myLove.css";
 import { motion } from "framer-motion";
 
