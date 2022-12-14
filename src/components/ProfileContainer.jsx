@@ -1,9 +1,9 @@
 import React from "react";
-import dp from "../assets/images/dp.jpg";
-import dp2 from "../assets/images/dp2.jpg";
-import dp3 from "../assets/images/dp3.jpg";
-import dp4 from "../assets/images/dp4.jpg";
-import dp5 from "../assets/images/dp5.jpg";
+import dp from "../assets/images/dp/dp.jpg";
+import dp2 from "../assets/images/dp/dp2.jpg";
+import dp3 from "../assets/images/dp/dp3.jpg";
+import dp4 from "../assets/images/dp/dp4.jpg";
+import dp5 from "../assets/images/dp/dp5.jpg";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
