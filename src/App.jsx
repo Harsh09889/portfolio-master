@@ -36,7 +36,7 @@ function App() {
 						duration: 1,
 					}}
 					className=' w-full mb-40 md:mb-0 md:w-[40%] h-fit sticky top-28 '>
-					<ProfileContainer />
+					<ProfileContainer activeLink={activeLink} />
 				</motion.div>
 				<AnimatePresence
 					initial={false}

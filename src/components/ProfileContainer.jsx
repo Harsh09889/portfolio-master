@@ -1,10 +1,22 @@
 import React from "react";
 import dp from "../assets/images/dp.jpg";
+import dp2 from "../assets/images/dp2.jpg";
+import dp3 from "../assets/images/dp3.jpg";
+import dp4 from "../assets/images/dp4.jpg";
+import dp5 from "../assets/images/dp5.jpg";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-export default function ProfileContainer(props) {
+export default function ProfileContainer({ activeLink }) {
 	const el = useRef(null);
+
+	const dps = {
+		dp1: dp,
+		dp2: dp2,
+		dp3: dp3,
+		dp4: dp4,
+		dp5: dp5,
+	};
 
 	useEffect(() => {
 		const typed = new Typed(el.current, {
@@ -60,7 +72,7 @@ export default function ProfileContainer(props) {
 				<div className='relative flex flex-col items-center justify-between py-14 pb-10 h-full'>
 					<img
 						className='w-[65%] sm:w-[80%] aspect-square'
-						src={dp}
+						src={dps[`dp${activeLink}`]}
 						alt='/'
 					/>
 

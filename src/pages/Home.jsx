@@ -38,7 +38,7 @@ function Home() {
 	}, []);
 
 	return (
-		<div className='grid place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10'>
+		<div className='grid place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10 z-[49]'>
 			<div className='justify-center flex flex-col gap-12 h-fit'>
 				<h1
 					className='
