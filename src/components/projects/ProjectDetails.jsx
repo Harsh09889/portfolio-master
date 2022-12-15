@@ -1,5 +1,5 @@
 function ProjectDetails({ images, description }) {
-	const imagePathPrefix = "/src/assets/images";
+	const imagePathPrefix = "/assets/images";
 
 	function getImageUrl(url) {
 		return new URL(url, import.meta.url).href;
