@@ -1,10 +1,14 @@
 function ProjectDetails({ images, description }) {
 	const imagePathPrefix = "/src/assets/images";
 
+	function getImageUrl(url) {
+		return new URL(url, import.meta.url).href;
+	}
+
 	const imageElements = images.map((e, id) => (
 		<img
 			key={id}
-			src={imagePathPrefix + e}
+			src={getImageUrl(imagePathPrefix + e)}
 			alt=''
 			className='border border-black'
 		/>
