@@ -1,3 +1,6 @@
+import ProjectDetails from "./ProjectDetails";
+import projects from "../../assets/data/projects.json";
+
 function ProjectsList() {
 	return (
 		<ul>
@@ -8,7 +11,12 @@ function ProjectsList() {
 						Go Live
 					</button>
 				</div>
-				<div className='md:h-0 mb-4 p-8 h-[70vh] md:p-0 md:group-hover:p-8  md:group-hover:h-[50vh] bg-white transition-all duration-500 linear'></div>
+				<div className='md:h-0 mb-4 p-8 h-[70vh] md:p-0 md:group-hover:p-8  md:group-hover:h-[50vh] bg-white transition-all duration-500 linear'>
+					<ProjectDetails
+						images={projects.instagram.images}
+						description={projects.instagram.description}
+					/>
+				</div>
 			</li>
 			<li className='group p-4 border cursor-pointer border-b-0'>
 				<div className='flex justify-between'>
@@ -17,7 +25,12 @@ function ProjectsList() {
 						Go Live
 					</button>
 				</div>
-				<div className='md:h-0 mb-4 p-8 h-[70vh] md:p-0 md:group-hover:p-8  md:group-hover:h-[50vh] bg-white transition-all duration-500 linear'></div>
+				<div className='md:h-0 mb-4 p-8 h-[70vh] md:p-0 md:group-hover:p-8  md:group-hover:h-[50vh] bg-white transition-all duration-500 linear'>
+					<ProjectDetails
+						images={projects.Myntra.images}
+						description={projects.Myntra.description}
+					/>
+				</div>
 			</li>
 			<li className='group p-4 border cursor-pointer border-b-0'>
 				<div className='flex justify-between'>

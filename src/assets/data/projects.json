@@ -1,0 +1,20 @@
+{
+	"instagram": {
+		"images": [
+			"/instagram/insta1.jpg",
+			"/instagram/insta2.jpg",
+			"/instagram/insta3.jpg",
+			"/instagram/insta4.jpg"
+		],
+		"description": "I built this Responsive Instagram clone with Real-Time Chat feature all by myself using React and firebase. You can Login or signup, follow or unfollow not only this, they can like and comment on others posts. You can chat with your friends in real time"
+	},
+	"Myntra": {
+		"images": [
+			"/myntra/myntra1.jpg",
+			"/myntra/myntra2.jpg",
+			"/myntra/myntra3.jpg",
+			"/myntra/myntra4.jpg"
+		],
+		"description": "I built this Responsive Myntra Online Shopping website clone with 'VOICE SEARCH' alongwith a team of 4 members in just 4 days using HTML, CSS, JS ans json-server. You can Login or signup, apply different filters and sorting of the products, add or remove items in the cart and place an order. I have contributed in each and every page of it for CSS and for advanced JS implementations like filter, sorting and display products accordingly and voice search."
+	}
+}
