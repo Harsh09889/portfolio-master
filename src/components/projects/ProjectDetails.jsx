@@ -1,5 +1,5 @@
 function ProjectDetails({ images, description }) {
-	const imagePathPrefix = "./src/assets/images";
+	const imagePathPrefix = "/src/assets/images";
 
 	const imageElements = images.map((e, id) => (
 		<img
