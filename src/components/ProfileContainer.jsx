@@ -39,7 +39,7 @@ export default function ProfileContainer({ activeLink }) {
 
 	return (
 		<div
-			className={`relative left-[50%] mt-8 md:mt-12 -translate-x-1/2 max-h-[35rem] md:max-h-[42rem] h-[calc(50vh+10vw)] md:max-w-[25rem] max-w-[20rem] w-[80%]`}>
+			className={`relative left-[50%] mt-8 md:mt-12 -translate-x-1/2 max-h-[35rem] md:max-h-[42rem] h-[calc(50vh+10vw)] md:max-w-[25rem] max-w-[20rem] w-[80%] -z-10`}>
 			<div
 				className={`
         before:content-['']
