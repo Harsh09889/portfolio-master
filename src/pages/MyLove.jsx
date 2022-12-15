@@ -88,7 +88,7 @@ function MyLove() {
 				</div>
 
 				<div className='cardsContainer  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-12 '>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'>
 							<p>
 								HTML is the Basic Structure of a website.
@@ -102,7 +102,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'>
 							<p>
 								CSS is like the beatification of the HTML
@@ -116,7 +116,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'>
 							<p>
 								We can add Logic, just like we decide in our house what button
@@ -130,15 +130,15 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative grid place-items-center rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative grid place-items-center rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={react}
 							alt=''
-							className='w-full '
+							className='w-full bg-white'
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={nodeJS}
@@ -146,7 +146,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={express}
@@ -154,7 +154,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={mongo}
@@ -162,7 +162,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl grid place-items-center p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl grid place-items-center p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={tailwind}
@@ -170,7 +170,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={java}
@@ -178,7 +178,7 @@ function MyLove() {
 							className='w-full '
 						/>
 					</div>
-					<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='relative rounded-2xl p-1 md:p-8 bg-[rgba(255,255,255,0.25)]'>
 						<div className='cardOverlay'></div>
 						<img
 							src={python}
