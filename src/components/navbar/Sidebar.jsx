@@ -25,7 +25,7 @@ function Sidebar({ activeLink, setActiveLink, setSidebar }) {
 			animate='visible'
 			exit='exit'
 			id='sidebar'
-			className='w-[90%] bg-black h-full text-white md:hidden fixed top-28 mx-[5%] rounded-lg p-8 z-50'>
+			className='w-[90%] bg-black h-full text-white md:hidden fixed top-28 mx-[5%] rounded-lg p-8 z-[100]'>
 			<AnimatePresence mode='wait'>
 				<SidebarItems
 					activeLink={activeLink}

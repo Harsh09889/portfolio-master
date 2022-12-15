@@ -16,7 +16,7 @@ function App() {
 				setActiveLink={setActiveLink}
 			/>
 			<div className='flex flex-col md:flex-row'>
-				<motion.div className='sticky w-full mb-40 md:mb-0 md:w-[40%] h-fit md:fixed top-28 '>
+				<motion.div className='sticky w-full mb-40 md:mb-0 md:w-[40%] h-fit md:fixed top-28 z-10'>
 					<ProfileContainer activeLink={activeLink} />
 				</motion.div>
 				<AnimatePresence initial={false}>
