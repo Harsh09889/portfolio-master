@@ -48,7 +48,7 @@ function ItsMe() {
 			transition={{ duration: 1, ease: "easeInOut" }}
 			// transition={{ duration: 0.5 }}
 			className='grid md:absolute right-0 pt-28 place-items-center min-h-screen w-full md:w-[60%] bg-[#FFA19F] p-10 z-[49]'>
-			<div className='justify-center flex flex-col gap-12 h-fit'>
+			<div className='justify-center flex flex-col gap-8 h-fit'>
 				<h1
 					className='
 						text-lg
