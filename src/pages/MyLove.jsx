@@ -4,12 +4,10 @@ import js from "../assets/images/skills/jsLogo.webp";
 import nodeJS from "../assets/images/skills/nodeJSLogo.png";
 import express from "../assets/images/skills/expressLogo.webp";
 import react from "../assets/images/skills/reactLogo.png";
-import redux from "../assets/images/skills/reduxLogo.png";
 import mongo from "../assets/images/skills/mongoLogo.webp";
 import java from "../assets/images/skills/javaLogo.webp";
 import python from "../assets/images/skills/pythonLogo.webp";
 import tailwind from "../assets/images/skills/tailwindLogo.webp";
-import linux from "../assets/images/skills/linuxLogo.webp";
 import "../styles/myLove.css";
 import { motion } from "framer-motion";
 
@@ -32,7 +30,9 @@ function MyLove() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			className='grid place-items-center min-h-screen w-full md:w-[60%] pt-12 md:pt-28 md:p-6 bg-[#00C9FF] z-[49]'>
+			transition={{ duration: 1, ease: "easeInOut" }}
+			// transition={{ duration: 0.5 }}
+			className='grid md:absolute right-0 place-items-center min-h-screen w-full md:w-[60%] pt-12 md:pt-28 md:p-6 bg-[#00C9FF] z-[49]'>
 			<div className='cardsContainer  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-12 '>
 				<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
 					<div className='cardOverlay'>
@@ -76,6 +76,14 @@ function MyLove() {
 						className='w-full '
 					/>
 				</div>
+				<div className='relative grid place-items-center rounded-2xl p-1 md:p-8 bg-white'>
+					<div className='cardOverlay'></div>
+					<img
+						src={react}
+						alt=''
+						className='w-full '
+					/>
+				</div>
 				<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
 					<div className='cardOverlay'></div>
 					<img
@@ -95,23 +103,15 @@ function MyLove() {
 				<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
 					<div className='cardOverlay'></div>
 					<img
-						src={react}
-						alt=''
-						className='w-full '
-					/>
-				</div>
-				<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
-					<div className='cardOverlay'></div>
-					<img
-						src={redux}
-						alt=''
-						className='w-full '
-					/>
-				</div>
-				<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
-					<div className='cardOverlay'></div>
-					<img
 						src={mongo}
+						alt=''
+						className='w-full '
+					/>
+				</div>
+				<div className='relative rounded-2xl grid place-items-center p-1 md:p-8 bg-white'>
+					<div className='cardOverlay'></div>
+					<img
+						src={tailwind}
 						alt=''
 						className='w-full '
 					/>
@@ -128,22 +128,6 @@ function MyLove() {
 					<div className='cardOverlay'></div>
 					<img
 						src={python}
-						alt=''
-						className='w-full '
-					/>
-				</div>
-				<div className='relative rounded-2xl grid place-items-center p-1 md:p-8 bg-white'>
-					<div className='cardOverlay'></div>
-					<img
-						src={tailwind}
-						alt=''
-						className='w-full '
-					/>
-				</div>
-				<div className='relative rounded-2xl p-1 md:p-8 bg-white'>
-					<div className='cardOverlay'></div>
-					<img
-						src={linux}
 						alt=''
 						className='w-full '
 					/>

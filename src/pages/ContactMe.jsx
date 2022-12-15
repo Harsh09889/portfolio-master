@@ -18,7 +18,8 @@ function ContactMe() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			className='grid place-items-center h-screen w-full md:w-[60%] bg-[#8FD82F] px-10 z-[49]'></motion.div>
+			transition={{ duration: 1, ease: "easeInOut" }}
+			className='md:absolute grid right-0 place-items-center h-screen w-full md:w-[60%] bg-[#8FD82F] px-10 z-[49]'></motion.div>
 	);
 }
 

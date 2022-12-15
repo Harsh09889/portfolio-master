@@ -55,7 +55,9 @@ function Home() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			className='grid place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10 z-[49]'>
+			transition={{ duration: 1, ease: "easeInOut" }}
+			// transition={{ duration: 0.5 }}
+			className='grid md:absolute right-0 place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10 z-[49]'>
 			<div className='justify-center flex flex-col gap-12 h-fit'>
 				<h1
 					className='
@@ -90,6 +92,7 @@ function Home() {
 					className={`
 						text-lg
 						md:text-2xl
+						text-justify
 						font-normal font-sans md:min-h-[150px]`}>
 					Analytical and detail-oriented aspiring Full Stack Developer. Capable
 					of writing production-ready code using ReactJS, Redux, and CSS on the

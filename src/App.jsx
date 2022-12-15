@@ -16,17 +16,10 @@ function App() {
 				setActiveLink={setActiveLink}
 			/>
 			<div className='flex flex-col md:flex-row'>
-				<motion.div
-					whileTap={{ scale: 0.2 }}
-					transition={{
-						duration: 1,
-					}}
-					className=' w-full mb-40 md:mb-0 md:w-[40%] h-fit sticky top-28 '>
+				<motion.div className='sticky w-full mb-40 md:mb-0 md:w-[40%] h-fit md:fixed top-28 '>
 					<ProfileContainer activeLink={activeLink} />
 				</motion.div>
-				<AnimatePresence
-					initial={false}
-					mode='wait'>
+				<AnimatePresence initial={false}>
 					<Router
 						location={location}
 						key={location.pathname}>

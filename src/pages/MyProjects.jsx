@@ -19,7 +19,9 @@ function MyProjects() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			className='grid place-items-center h-screen w-full md:w-[60%] bg-[#FE614E] z-[49]'></motion.div>
+			transition={{ duration: 1, ease: "easeInOut" }}
+			// transition={{ duration: 0.5 }}
+			className='grid md:absolute right-0 place-items-center h-screen w-full md:w-[60%] bg-[#FE614E] z-[49]'></motion.div>
 	);
 }
 
