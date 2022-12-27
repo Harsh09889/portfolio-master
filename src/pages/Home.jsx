@@ -55,9 +55,9 @@ function Home() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			transition={{ duration: 1, ease: "easeInOut" }}
-			className='md:absolute right-0 md:w-[60%]  bg-black h-screen overflow-y-scroll w-full z-[49]'>
-			<div className='grid place-items-center min-h-screen w-full  bg-[#fab327] p-10 pt-28 z-[49]'>
+			transition={{ duration: 0.45, type: "spring", ease: "easeInOut" }}
+			className='md:absolute right-0 md:w-[60%] h-screen  w-full z-[49]'>
+			<div className='grid place-items-center min-h-screen overflow-y-scroll h-full w-full  bg-[#fab327] p-10 pt-28 z-[49]'>
 				<div className='justify-center flex flex-col gap-8 h-fit'>
 					<h1
 						className='
@@ -91,14 +91,23 @@ function Home() {
 					<h1
 						className={`
 						text-lg
-						md:text-2xl
-						text-justify
 						font-normal font-sans md:min-h-[150px]`}>
-						Analytical and detail-oriented aspiring Full Stack Developer.
-						Capable of writing production-ready code using ReactJS, Redux, and
-						CSS on the frontend, NodeJS and Express on the backend to build
-						single page applications. Passionate about coding and strongly
-						interested in working in a product-based company.
+						I am an aspiring web developer with a vast array of knowledge in
+						many different front end and back end languages, responsive
+						frameworks, databases, and best code practices.
+						<br />
+						My objective is simply to be the best web developer that I can be
+						and to contribute to the technology industry all that I know and can
+						do. <br />I am dedicated to perfecting my craft by learning from
+						more seasoned developers, remaining humble, and continuously making
+						strides to learn all that I can about development. <br />I believe
+						that my understanding of problem solving and algorithms are also
+						skills that have and will continue to contribute to my overall
+						success as a developer.
+						<br />
+						<br />
+						<br />
+						<span className=''>PS:- I Love (っ ͡❛ ‿‿ ͡❛)っ🎔 React </span>
 					</h1>
 
 					<span

@@ -45,7 +45,7 @@ function ItsMe() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			transition={{ duration: 1, ease: "easeInOut" }}
+			transition={{ duration: 0.45, type: "spring", ease: "easeInOut" }}
 			className='md:absolute right-0 md:w-[60%]  bg-black h-screen overflow-y-scroll w-full z-[49]'>
 			<div className='grid place-items-center min-h-screen w-full  bg-[#FFA19F] p-10 pt-28 z-[49]'>
 				<div className='justify-center flex flex-col gap-8 h-fit'>
@@ -80,21 +80,46 @@ function ItsMe() {
 					<h1
 						className={`
 						text-lg
-						md:text-2xl
 						text-justify
 						font-normal font-sans md:min-h-[150px]`}>
 						Computers have fascinated me since childhood. I have a sound
 						understanding about Web Development both Front-End and Back-End,
-						Computer Fundamentals, Data Structures , Algorithms and programming
-						languages like JavaScript , Java and Python. Building projects has
-						got me hands-on experience with MERN (MongoDB, ExpressJS, ReactJS,
-						NodeJS) tech stack trained me to become a more adaptive and
-						collaborative professional. I also have been a Teacher for enough
-						time now. Making things Simpler to understand has always been my
-						thing. I am passionate about building challenging projects and
-						excelling in their development, and looking forward to creating a
-						mark for myself as a Full Stack Developer.
+						Computer Fundamentals, Data Structures & Algorithms and programming
+						languages like JavaScript , Java and Python
+						<br />
+						<br /> Building projects has got me hands-on experience with MERN
+						(MongoDB, ExpressJS, ReactJS, NodeJS) tech stack trained me to
+						become a more adaptive and collaborative professional.
+						<br />
+						<br />I also have been a Teacher for enough time now. Making things
+						Simpler to understand has always been my thing. I am passionate
+						about building challenging projects and excelling in their
+						development, and looking forward to creating a mark for myself as a
+						Full Stack Developer.
 					</h1>
+
+					<p className='flex gap-4'>
+						<img
+							className='w-1/2'
+							src='https://github-readme-stats.vercel.app/api/top-langs?username=harsh09889&show_icons=true&locale=en&layout=compact'
+							alt='harsh09889'
+						/>
+						<img
+							className='w-1/2'
+							src='https://github-readme-streak-stats.herokuapp.com/?user=harsh09889&'
+							alt='harsh09889'
+						/>
+					</p>
+
+					<p>
+						&nbsp;
+						<img
+							align='center'
+							className='w-full'
+							src='https://github-readme-stats.vercel.app/api?username=harsh09889&show_icons=true&locale=en'
+							alt='harsh09889'
+						/>
+					</p>
 
 					<div className='flex flex-col md:flex-row gap-4'>
 						<table className='table-fixed h-60 w-full'>
