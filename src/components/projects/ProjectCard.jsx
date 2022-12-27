@@ -9,7 +9,7 @@ function ProjectCard({ projectName, images, description }) {
 				transform: "rotateX(45deg)",
 				boxShadow: "0px 40px 10px rgba(0,0,0,0.5)",
 			}}
-			className='group p-4 cursor-pointer bg-[rgba(255,255,255,0.25)] transition-all duration-500 linear'>
+			className='group p-4 my-2 cursor-pointer bg-[rgba(255,255,255,0.25)] transition-all duration-500 w-full linear'>
 			<div className='flex justify-between'>
 				<h2 className='my-4 text-xl '>{projectName}</h2>
 				<button className='p-2 group-hover:bg-transparent transition-all duration-500 bg-white text-black px-8 border border-b-0'>

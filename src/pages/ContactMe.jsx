@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 function ContactMe() {
 	const slideUp = {
 		hidden: {
-			y: "100%",
+			right: "-100vw",
 		},
 		visible: {
-			y: 0,
+			right: 0,
 		},
 		exit: {
-			y: 0,
+			right: 0,
 		},
 	};
 	return (
@@ -19,7 +19,11 @@ function ContactMe() {
 			animate='visible'
 			exit='exit'
 			transition={{ duration: 1, ease: "easeInOut" }}
-			className='md:absolute grid right-0 place-items-center h-screen w-full md:w-[60%] bg-[#8FD82F] px-10 z-[49]'></motion.div>
+			className='md:absolute right-0 md:w-[60%]  bg-black h-screen overflow-y-scroll w-full z-[49]'>
+			<div className='grid place-items-center min-h-screen w-full  bg-[#fab327] p-10 pt-28 z-[49]'>
+				<div className='justify-center flex flex-col gap-8 h-fit'></div>
+			</div>
+		</motion.div>
 	);
 }
 

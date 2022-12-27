@@ -1,18 +1,18 @@
 # instagram
 
-# whatsapp
+# Sorting Visualiser
 
 # Myntra
 
 # Portfolio
 
-# Sorting Visualiser
+# Quiz App
+
+# whatsapp
 
 # Sudoku Solver
 
 # News App
-
-# Quiz App
 
 # todo App
 

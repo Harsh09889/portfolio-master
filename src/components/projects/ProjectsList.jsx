@@ -12,7 +12,7 @@ function ProjectsList() {
 	));
 
 	return (
-		<ul style={{ transform: "preserve3d", perspective: 1500 }}>
+		<ul style={{ transform: "preserve3d", perspective: 1500, width: "100%" }}>
 			{projectCards}
 		</ul>
 	);

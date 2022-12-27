@@ -8,13 +8,13 @@ function Home() {
 
 	const slideUp = {
 		hidden: {
-			y: "100%",
+			right: "-100vw",
 		},
 		visible: {
-			y: 0,
+			right: 0,
 		},
 		exit: {
-			y: 0,
+			right: 0,
 		},
 	};
 
@@ -56,25 +56,25 @@ function Home() {
 			animate='visible'
 			exit='exit'
 			transition={{ duration: 1, ease: "easeInOut" }}
-			// transition={{ duration: 0.5 }}
-			className='grid md:absolute right-0 place-items-center min-h-screen w-full md:w-[60%] bg-[var(--primary-color)] px-10 z-[49]'>
-			<div className='justify-center flex flex-col gap-12 h-fit'>
-				<h1
-					className='
+			className='md:absolute right-0 md:w-[60%]  bg-black h-screen overflow-y-scroll w-full z-[49]'>
+			<div className='grid place-items-center min-h-screen w-full  bg-[#fab327] p-10 pt-28 z-[49]'>
+				<div className='justify-center flex flex-col gap-8 h-fit'>
+					<h1
+						className='
 						text-lg
 						md:text-xl
 						tracking-wider
 						font-bold 
 						text-[#1A1914]
 						'>
-					Introduction
-				</h1>
+						Introduction
+					</h1>
 
-				<div className='flex justify-start gap-6 items-start w-full'>
-					<span
-						ref={el}
-						id='salutation'
-						className='text
+					<div className='flex justify-start gap-6 items-start w-full'>
+						<span
+							ref={el}
+							id='salutation'
+							className='text
 						text-4xl 
 						ease-out
 						md:text-6xl 
@@ -82,30 +82,31 @@ function Home() {
 						md:min-h-[90px]
 						'></span>
 
-					<motion.img
-						className='h-16 w-16 md:h-20 md:w-20 bg-white p-2 -m-2 rounded-full'
-						src='https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png'
-					/>
-				</div>
+						<motion.img
+							className='h-16 w-16 md:h-20 md:w-20 bg-white p-2 -m-2 rounded-full'
+							src='https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png'
+						/>
+					</div>
 
-				<h1
-					className={`
+					<h1
+						className={`
 						text-lg
 						md:text-2xl
 						text-justify
 						font-normal font-sans md:min-h-[150px]`}>
-					Analytical and detail-oriented aspiring Full Stack Developer. Capable
-					of writing production-ready code using ReactJS, Redux, and CSS on the
-					frontend, NodeJS and Express on the backend to build single page
-					applications. Passionate about coding and strongly interested in
-					working in a product-based company.
-				</h1>
+						Analytical and detail-oriented aspiring Full Stack Developer.
+						Capable of writing production-ready code using ReactJS, Redux, and
+						CSS on the frontend, NodeJS and Express on the backend to build
+						single page applications. Passionate about coding and strongly
+						interested in working in a product-based company.
+					</h1>
 
-				<span
-					style={{ fontFamily: "Montez, cursive" }}
-					className='font text-4xl md:text-6xl underline underline-offset-8 text-black text-right -rotate-12 origin-center mt-8'>
-					Harsh kumar
-				</span>
+					<span
+						style={{ fontFamily: "Montez, cursive" }}
+						className='font text-4xl md:text-6xl underline underline-offset-8 text-black text-right -rotate-12 origin-center mt-8'>
+						Harsh kumar
+					</span>
+				</div>
 			</div>
 		</motion.div>
 	);
