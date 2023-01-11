@@ -8,6 +8,9 @@ function ProjectsList() {
 			projectName={e.projectName}
 			images={e.images}
 			description={e.description}
+			subheading={e.subheading}
+			features={e.features}
+			techStack={e.techStack}
 		/>
 	));
 

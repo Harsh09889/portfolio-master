@@ -2,23 +2,94 @@
 	"projects": [
 		{
 			"projectName": "Instagram",
+			"subheading": "Responsive Instagram clone with Real-Time Chat feature",
 			"images": [
 				"/instagram/insta1.jpg",
 				"/instagram/insta2.jpg",
 				"/instagram/insta3.jpg",
 				"/instagram/insta4.jpg"
 			],
-			"description": "I built this Responsive Instagram clone with Real-Time Chat feature all by myself using React and firebase. You can Login or signup, follow or unfollow not only this, they can like and comment on others posts. You can chat with your friends in real time"
+			"techStack": ["ReactJS", "Firebase"],
+			"description": "I built this Responsive Instagram clone with Real-Time Chat feature all by myself using React and firebase. You can Login or signup, follow or unfollow not only this, they can like and comment on others posts. You can chat with your friends in real time",
+			"features": [
+				"Authentication of the User (using Firebase Authentication)",
+				"Real-time Chat",
+				"Upload image as Post",
+				"Comments and Likes on posts",
+				"User's Profile section.",
+				"Following and unfollowing Users.",
+				"Personalised feed shows the posts of the users whom you are following.",
+				"Responsiveness"
+			]
+		},
+		{
+			"projectName": "Swiggy",
+			"subheading": "Responsive Swiggy  website clone",
+			"images": [
+				"/swiggy/swiggy1.png",
+				"/swiggy/swiggy2.png",
+				"/swiggy/swiggy3.png",
+				"/swiggy/swiggy4.png"
+			],
+			"description": "I built this Responsive Swiggy clone with 'VOICE SEARCH' alongwith a team of 4 members in just 4 days using HTML, CSS, JS ans json-server. You can Login or signup, apply different filters and sorting of the products, add or remove items in the cart and place an order. I have contributed in each and every page of it for CSS and for advanced JS implementations like filter, sorting and display products accordingly and voice search.",
+			"features": [
+				"Multi User Login or signup",
+				"Multi User cart functionality",
+				"different filters and sorting",
+				"Lazy Loading",
+				"Debouncing",
+				"add or remove items in the cart and place an order",
+				"Search Products by speech"
+			],
+			"techStack": [
+				"ReactJS",
+				"Redux",
+				"Tailwind CSS",
+				"Framer Motion",
+				"JSON SERVER",
+				"axios"
+			]
+		},
+		{
+			"projectName": "3-d Sorting Visualizer",
+			"subheading": "Sorting algorithms can be difficult to understand and it’s easy to get confused. Visualizing sorting algorithms can be a great way to better understand their functioning while having fun.",
+			"images": ["/sorting/sorting1.png"],
+			"description": "Sorting algorithms can be difficult to understand and it’s easy to get confused. Visualizing sorting algorithms can be a great way to better understand their functioning while having fun.",
+			"features": [
+				"Converting the Sorting logic into the visuals",
+				"There is not much to mention Check it on your own"
+			],
+			"techStack": ["HTML", "CSS", "JavaScript"]
+		},
+		{
+			"projectName": "Sudoku Solver",
+			"subheading": "Sudoku is a very mindful game but visualising it being done prgramatically is a great feeling.",
+			"images": ["/sudoku/sudoku1.png"],
+			"description": "Sorting algorithms can be difficult to understand and it’s easy to get confused. Visualizing sorting algorithms can be a great way to better understand their functioning while having fun.",
+			"features": [
+				"Getting to see Backtracking in front",
+				"There is not much to mention Check it on your own"
+			],
+			"techStack": ["ReactJS"]
 		},
 		{
 			"projectName": "Myntra",
+			"subheading": "Responsive Myntra Online Shopping website clone with 'VOICE SEARCH'",
 			"images": [
 				"/myntra/myntra1.jpg",
 				"/myntra/myntra2.jpg",
 				"/myntra/myntra3.jpg",
 				"/myntra/myntra4.jpg"
 			],
-			"description": "I built this Responsive Myntra Online Shopping website clone with 'VOICE SEARCH' alongwith a team of 4 members in just 4 days using HTML, CSS, JS ans json-server. You can Login or signup, apply different filters and sorting of the products, add or remove items in the cart and place an order. I have contributed in each and every page of it for CSS and for advanced JS implementations like filter, sorting and display products accordingly and voice search."
+			"description": "I built this Responsive Myntra Online Shopping website clone with 'VOICE SEARCH' alongwith a team of 4 members in just 4 days using HTML, CSS, JS ans json-server. You can Login or signup, apply different filters and sorting of the products, add or remove items in the cart and place an order. I have contributed in each and every page of it for CSS and for advanced JS implementations like filter, sorting and display products accordingly and voice search.",
+			"features": [
+				"Login or signup",
+				"different filters and sorting of the products",
+				"add or remove items in the cart and place an order",
+				"Search Products by speech",
+				"Men, Women and kids Section"
+			],
+			"techStack": ["HTML", "CSS", "JavaScript", "JSON SERVER"]
 		}
 	]
 }
