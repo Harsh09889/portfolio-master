@@ -11,6 +11,8 @@ function ProjectsList() {
 			subheading={e.subheading}
 			features={e.features}
 			techStack={e.techStack}
+			liveLink={e.liveLink}
+			githubLink={e.githubLink}
 		/>
 	));
 

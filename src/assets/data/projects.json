@@ -20,7 +20,9 @@
 				"Following and unfollowing Users.",
 				"Personalised feed shows the posts of the users whom you are following.",
 				"Responsiveness"
-			]
+			],
+			"liveLink": "https://react-instagram-byharsh.netlify.app/",
+			"githubLink": "https://github.com/Harsh09889/Instagram"
 		},
 		{
 			"projectName": "Swiggy",
@@ -48,7 +50,9 @@
 				"Framer Motion",
 				"JSON SERVER",
 				"axios"
-			]
+			],
+			"liveLink": "https://swiggy-masai.netlify.app/home",
+			"githubLink": "https://github.com/Harsh09889/SwiggyClone"
 		},
 		{
 			"projectName": "3-d Sorting Visualizer",
@@ -59,7 +63,9 @@
 				"Converting the Sorting logic into the visuals",
 				"There is not much to mention Check it on your own"
 			],
-			"techStack": ["HTML", "CSS", "JavaScript"]
+			"techStack": ["HTML", "CSS", "JavaScript"],
+			"liveLink": "https://sorting-visualizer-harsh.netlify.app/",
+			"githubLink": "https://github.com/Harsh09889/sortingVisualiser"
 		},
 		{
 			"projectName": "Sudoku Solver",
@@ -70,7 +76,9 @@
 				"Getting to see Backtracking in front",
 				"There is not much to mention Check it on your own"
 			],
-			"techStack": ["ReactJS"]
+			"techStack": ["ReactJS"],
+			"liveLink": "https://sudoku-solver-harsh.netlify.app/",
+			"githubLink": "https://github.com/Harsh09889/SudokuSolver"
 		},
 		{
 			"projectName": "Myntra",
@@ -89,7 +97,9 @@
 				"Search Products by speech",
 				"Men, Women and kids Section"
 			],
-			"techStack": ["HTML", "CSS", "JavaScript", "JSON SERVER"]
+			"techStack": ["HTML", "CSS", "JavaScript", "JSON SERVER"],
+			"liveLink": "https://myntra-masai.netlify.app/",
+			"githubLink": "https://github.com/PrabhatAcharya/Myntra"
 		}
 	]
 }

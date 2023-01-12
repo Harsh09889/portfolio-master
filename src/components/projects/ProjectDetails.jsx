@@ -13,7 +13,14 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-function ProjectDetails({ images, subheading, features, techStack }) {
+function ProjectDetails({
+	images,
+	subheading,
+	features,
+	techStack,
+	githubLink,
+	liveLink,
+}) {
 	function getImageUrl(url) {
 		return new URL(url, import.meta.url).href;
 	}
@@ -82,7 +89,11 @@ function ProjectDetails({ images, subheading, features, techStack }) {
 						</Box>
 					</Stack>
 				</CardBody>
-				<Button>Github</Button>
+				<a
+					href={githubLink}
+					target='_blank'>
+					<Button>Github</Button>
+				</a>
 			</Card>
 		</motion.div>
 	);
