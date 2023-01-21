@@ -45,7 +45,7 @@ function ItsMe() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			transition={{ duration: 0.45, type: "spring", ease: "easeInOut" }}
+			transition={{ duration: 1.25, type: "spring", ease: "easeInOut" }}
 			className='md:absolute right-0 md:w-[60%]  bg-black h-screen overflow-y-scroll w-full z-[49]'>
 			<div className='grid place-items-center min-h-screen w-full  bg-[#FFA19F] p-10 pt-28 z-[49]'>
 				<div className='justify-center flex flex-col gap-8 h-fit'>

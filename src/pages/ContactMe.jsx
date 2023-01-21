@@ -25,6 +25,7 @@ import {
 	MdEmail,
 	MdOutlineEmail,
 } from "react-icons/md";
+import FloatingBubbles from "../components/floatingBubbles/FloatingBubbles";
 
 const confetti = {
 	light: {
@@ -62,7 +63,7 @@ function ContactMe() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			transition={{ duration: 0.45, type: "spring", ease: "easeInOut" }}
+			transition={{ duration: 1.25, type: "spring", ease: "easeInOut" }}
 			className='md:absolute right-0 top-0 md:w-[60%]  h-screen overflow-y-scroll w-full z-[49]'>
 			<div className='  min-h-screen h-full w-full  bg-[#8fd82f] p-10 pt-28 z-[49] overflow-y-scroll'>
 				<Flex

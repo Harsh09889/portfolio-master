@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import ProfileContainer from "./components/ProfileContainer";
 import PageContainer from "./components/PageContainer";
+import FloatingBubbles from "./components/floatingBubbles/FloatingBubbles";
 
 function App() {
 	const [activeLink, setActiveLink] = useState(1);
@@ -17,7 +18,9 @@ function App() {
 			/>
 			<div className='flex flex-col md:flex-row'>
 				<motion.div className='sticky w-full mb-40 md:mb-0 md:w-[40%] h-fit md:fixed top-28 z-10'>
-					<ProfileContainer activeLink={activeLink} />
+					<Router>
+						<ProfileContainer activeLink={activeLink} />
+					</Router>
 				</motion.div>
 				<AnimatePresence initial={false}>
 					<Router

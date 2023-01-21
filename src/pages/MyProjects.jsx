@@ -46,7 +46,7 @@ function MyProjects() {
 			initial='hidden'
 			animate='visible'
 			exit='exit'
-			transition={{ duration: 0.45, type: "spring", ease: "easeInOut" }}
+			transition={{ duration: 1.25, type: "spring", ease: "easeInOut" }}
 			className='md:absolute right-0 md:w-[60%] h-screen w-full z-[49]'>
 			<div className='h-screen w-full overflow-y-scroll bg-[#fe614e] p-10 pt-28 z-[49]'>
 				<div className='flex flex-col gap-8 h-fit'>

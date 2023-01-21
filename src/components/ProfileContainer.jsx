@@ -6,6 +6,7 @@ import dp4 from "../assets/images/dp/dp4.jpg";
 import dp5 from "../assets/images/dp/dp5.jpg";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import FloatingBubbles from "./floatingBubbles/FloatingBubbles";
 
 export default function ProfileContainer({ activeLink }) {
 	const el = useRef(null);
@@ -38,10 +39,12 @@ export default function ProfileContainer({ activeLink }) {
 	}, []);
 
 	return (
-		<div
-			className={`relative left-[50%] mt-8 md:mt-12 -translate-x-1/2 max-h-[35rem] md:max-h-[42rem] h-[calc(50vh+10vw)] md:max-w-[25rem] max-w-[20rem] w-[80%] -z-10`}>
+		<>
+			<FloatingBubbles />
 			<div
-				className={`
+				className={`relative left-[50%] mt-8 md:mt-12 -translate-x-1/2 max-h-[35rem] md:max-h-[42rem] h-[calc(50vh+10vw)] md:max-w-[25rem] max-w-[20rem] w-[80%] -z-10 bg-[#edf2f7]`}>
+				<div
+					className={`
         before:content-['']
         before:absolute
         before:block
@@ -69,20 +72,20 @@ export default function ProfileContainer({ activeLink }) {
         after:scale-x-[1.02] 
         after:rounded-lg
         `}>
-				<div className='relative flex flex-col items-center justify-between py-14 pb-10 h-full'>
-					<img
-						className='w-[65%] sm:w-[80%] aspect-square'
-						src={dps[`dp${activeLink}`]}
-						alt='/'
-					/>
+					<div className='relative flex flex-col items-center justify-between py-14 pb-10 h-full'>
+						<img
+							className='w-[65%] sm:w-[80%] aspect-square'
+							src={dps[`dp${activeLink}`]}
+							alt='/'
+						/>
 
-					<div className='w-[80%] h-[20%]  flex flex-col justify-around '>
-						<p className=' text-[#82796C] tracking-wider text-center text-sm'>
-							Hey there, This is me!!
-						</p>
-						<h1
-							ref={el}
-							className="
+						<div className='w-[80%] h-[20%]  flex flex-col justify-around '>
+							<p className=' text-[#82796C] tracking-wider text-center text-sm'>
+								Hey there, This is me!!
+							</p>
+							<h1
+								ref={el}
+								className="
                     relative 
                     py-1
                     text-lg
@@ -117,9 +120,10 @@ export default function ProfileContainer({ activeLink }) {
                     after:text-green-500
                     after:animate-pulse
                     "></h1>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
