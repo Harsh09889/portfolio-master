@@ -1,6 +1,35 @@
 {
 	"projects": [
 		{
+			"projectName": "Codepen with Realtime Code Sync",
+			"subheading": "Completely Responsive codepen clone with collaboration feature.",
+			"images": [
+				"/codepen/codepen1.jpg",
+				"/codepen/codepen2.jpg",
+				"/codepen/codepen3.jpg",
+				"/codepen/codepen4.jpg"
+			],
+			"techStack": [
+				"Express JS",
+				"Socket.io",
+				"Node JS",
+				"React JS",
+				"Context API",
+				"JWT Authentication",
+				"Github OAuth",
+				"Tailwind CSS"
+			],
+			"description": "A CodePen clone is a web application that allows users to write and share front-end code snippets. The MERN stack, which stands for MongoDB, Express, React, and Node.js, is a popular combination of technologies used to build full-stack web applications. Socket.io is a library that enables real-time bidirectional communication between the client and the server, which is useful for implementing real-time collaboration features.",
+			"features": [
+				"Authentication of the User",
+				"Real-time Code sync",
+				"Save Codepen",
+				"Responsiveness"
+			],
+			"liveLink": "https://cloneofcodepen.netlify.app/",
+			"githubLink": "https://github.com/Harsh09889/codepen-fullstack"
+		},
+		{
 			"projectName": "Instagram",
 			"subheading": "Responsive Instagram clone with Real-Time Chat feature",
 			"images": [
@@ -66,6 +95,16 @@
 			"techStack": ["HTML", "CSS", "JavaScript"],
 			"liveLink": "https://sorting-visualizer-harsh.netlify.app/",
 			"githubLink": "https://github.com/Harsh09889/sortingVisualiser"
+		},
+		{
+			"projectName": "Candy Crush clone",
+			"subheading": "Candy Crush game",
+			"images": ["/candycrush/candycrush1.png"],
+			"description": "Play candy crush on the Web.",
+			"features": ["Candy crush game with score updates"],
+			"techStack": ["HTML", "Tailwind CSS", "React JS"],
+			"liveLink": "https://candycrushcloneharsh.netlify.app/",
+			"githubLink": "https://github.com/Harsh09889/candy-crush"
 		},
 		{
 			"projectName": "Sudoku Solver",

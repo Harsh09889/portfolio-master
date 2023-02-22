@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 function ProjectsList() {
 	const projectCards = projectsData.projects.map((e, i) => (
 		<ProjectCard
-			key={i}
+			key={e.projectName}
 			projectName={e.projectName}
 			images={e.images}
 			description={e.description}

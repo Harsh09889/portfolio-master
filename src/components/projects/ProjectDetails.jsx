@@ -3,9 +3,7 @@ import {
 	Button,
 	Card,
 	CardBody,
-	CardHeader,
 	Heading,
-	HStack,
 	Stack,
 	StackDivider,
 	Tag,
@@ -19,7 +17,6 @@ function ProjectDetails({
 	features,
 	techStack,
 	githubLink,
-	liveLink,
 }) {
 	function getImageUrl(url) {
 		return new URL(url, import.meta.url).href;

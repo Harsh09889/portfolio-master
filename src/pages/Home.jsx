@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
-import FloatingBubbles from "../components/floatingBubbles/FloatingBubbles";
 
 function Home() {
 	const el = useRef("span");
@@ -85,7 +84,7 @@ function Home() {
 
 						<motion.img
 							className='h-16 w-16 md:h-20 md:w-20 bg-white p-2 -m-2 rounded-full'
-							src='https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png'
+							src='/wave.png'
 						/>
 					</div>
 
